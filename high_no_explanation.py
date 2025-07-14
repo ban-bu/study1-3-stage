@@ -170,8 +170,8 @@ def convert_svg_to_png(svg_content):
 # 设置三种推荐级别的配置
 RECOMMENDATION_CONDITIONS = {
     "low": {"count": 1, "name": "Low Recommendation"},
-    "medium": {"count": 3, "name": "Medium Recommendation"},
-    "high": {"count": 5, "name": "High Recommendation"}
+    "medium": {"count": 5, "name": "Medium Recommendation"},
+    "high": {"count": 10, "name": "High Recommendation"}
 }
 
 # 条件顺序（每个参与者依次体验这三种条件）
@@ -858,7 +858,7 @@ def show_high_recommendation_without_explanation():
         <div style="margin-bottom: 15px; padding: 10px; background-color: #f0f2f6; border-radius: 5px;">
         <p style="margin: 0; font-size: 14px;">Enter keywords to describe your ideal T-shirt design. In this condition, AI will generate {current_config['count']} design options for you.</p>
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #666;">
-        <strong>Experiment Instructions:</strong> You need to experience three different recommendation levels (Low: 1, Medium: 3, High: 5 designs) in sequence. Please try generating designs at least once for each condition.
+        <strong>Experiment Instructions:</strong> You need to experience three different recommendation levels (Low: 1, Medium: 5, High: 10 designs) in sequence. Please try generating designs at least once for each condition.
         </p>
         </div>
         """, unsafe_allow_html=True)
