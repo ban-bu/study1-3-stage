@@ -856,7 +856,7 @@ def show_high_recommendation_without_explanation():
         # Add brief description
         st.markdown(f"""
         <div style="margin-bottom: 15px; padding: 10px; background-color: #f0f2f6; border-radius: 5px;">
-        <p style="margin: 0; font-size: 14px;">Enter keywords to describe your ideal T-shirt design. In this condition, AI will generate {current_config['count']} design options for you.</p>
+        <p style="margin: 0; font-size: 14px;">Enter keyword to describe your ideal T-shirt design. In this condition, AI will generate {current_config['count']} design options for you.</p>
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #666;">
         <strong>Experiment Instructions:</strong> You need to experience three different recommendation levels (Low: 1, Medium: 5, High: 10 designs) in sequence. Please try generating designs at least once for each condition.
         </p>
@@ -868,7 +868,7 @@ def show_high_recommendation_without_explanation():
             st.session_state.keywords = ""
         
         # Keywords input box
-        keywords = st.text_input("Enter design keywords", value=st.session_state.keywords, 
+        keywords = st.text_input("Enter design keyword", value=st.session_state.keywords, 
                               placeholder="please only input one word", key="input_keywords")
         
         # Generate design button
