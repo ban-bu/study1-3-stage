@@ -869,7 +869,7 @@ def show_high_recommendation_without_explanation():
         
         # Keywords input box
         keywords = st.text_input("Enter design keywords", value=st.session_state.keywords, 
-                              placeholder="e.g., casual, nature, blue", key="input_keywords")
+                              placeholder="please only input one word", key="input_keywords")
         
         # Generate design button
         generate_col = st.empty()
